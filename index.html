@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="location" placeholder="Search for locations">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="location-info">
+            <h1 id="cityName">Kathmandu</h1>
+            <p id="country"></p>
+            <div id="icon"></div>
+            <h1 id="temp"></h1>
+            <h1 id="description"></h1>
+        </div>
+        <div class="weather-info">
+            <div class="temp-info-container">
+                <img src="images/temperature-stroke-rounded.svg" alt="">
+                <div class="temp-info">
+                    <p>Feels Like</p>
+                    <p id="feels-like-info"></p>
+                </div>
+            </div>
+            <div class="temp-info-container">
+                <img src="images/humidity-stroke-rounded.svg" alt="">
+                <div class="temp-info">
+                    <p>Humidity</p>
+                    <p id="humidity-info"></p>
+                </div>
+            </div>
+            <div class="temp-info-container">
+                <img src="images/fast-wind-stroke-rounded.svg" alt="">
+                <div class="temp-info">
+                    <p>Wind</p>
+                    <p id="wind-info"></p>
+                </div>
+            </div>
+            <div class="temp-info-container">
+                <img src="images/weight-scale-01-stroke-rounded.svg" alt="">
+                <div class="temp-info">
+                    <p>Pressure</p>
+                    <p id="pressure-info"></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
